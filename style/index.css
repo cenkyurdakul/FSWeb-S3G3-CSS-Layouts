@@ -1,1 +1,132 @@
 /* CSS stillerinizi buraya girin */
+body{
+    font-family: 'Roboto Mono', monospace;
+    color: aquamarine;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(156deg, rgba(2,0,36,1) 18%, rgba(11,11,142,1) 47%, rgba(7,6,98,1) 64%, rgba(3,1,48,1) 82%, rgba(2,0,36,1) 100%);
+}
+
+h1{
+    margin: 2% auto;
+    display:flex;
+    font-size: 30px;
+    color: aquamarine;
+    justify-content: center;
+    height: 40px;
+}
+
+
+.flex-container-nav{
+    display: flex;
+    font-size: 24px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    align-content: center;
+    padding: 3%;
+    border-radius: 3%;
+    flex-grow: 1;
+    color: aquamarine;
+}
+
+.flex-item{
+    font-size: 1.25rem;
+    font-family: 'Roboto Mono', monospace; 
+    padding: 0.5rem 1rem;
+    color:aquamarine;
+    border: 1px solid aquamarine;
+}
+
+.flex-container-main{
+    padding: 0 10%;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    font-size: 18px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.flex-container-image{
+    width: 1400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container-projeler{
+    padding: 3%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.flex-container-projeler-image1{
+    display: flex;
+    justify-content: space-evenly;
+    height: 550px;
+    width: 200px;
+    padding: 5%;
+    flex-shrink: 1;
+}
+
+.flex-container-projeler-image2{
+    display: flex;
+    justify-content: space-evenly;
+    height: 550px;
+    width: 200px;
+    padding: 5%;
+    flex-shrink: 1;
+}
+
+.flex-container-projeler-image3{
+    display: flex;
+    justify-content: space-evenly;
+    height: 550px;
+    width: 200px;
+    padding: 5%;
+    flex-shrink: 1;
+}
+
+.flex-container-projeler-text{
+    
+    width: 200px;
+    padding: 10%;
+
+    display: flex;
+    font-size: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    align-content: center;
+    padding: 3%;
+    border-radius: 3%;
+    flex-grow: 1;
+    color: aquamarine;
+
+}
+
+h2{
+    margin: 2% auto;
+    display:flex;
+    font-size: 15px;
+    color: aquamarine;
+    justify-content: center;
+    height: 20px;
+    border: 1px solid aquamarine;
+}
+
+.flex-container-nav2{
+    display: flex;
+    font-size: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    align-content: center;
+    padding: 3%;
+    border-radius: 3%;
+    flex-grow: 1;
+    color: aquamarine;
+}
