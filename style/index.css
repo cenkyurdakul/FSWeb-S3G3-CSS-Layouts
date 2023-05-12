@@ -1,4 +1,8 @@
 /* CSS stillerinizi buraya girin */
+html{
+    font-size: 24px;
+    font-family: 'Roboto Mono', monospace;
+}
 body{
     font-family: 'Roboto Mono', monospace;
     color: aquamarine;
@@ -11,16 +15,16 @@ body{
 h1{
     margin: 2% auto;
     display:flex;
-    font-size: 30px;
+    font-size: 1.25rem;
     color: aquamarine;
     justify-content: center;
-    height: 40px;
+    height: 2rem;
 }
 
 
 .flex-container-nav{
     display: flex;
-    font-size: 24px;
+    font-size: 1rem;
     flex-direction: row;
     justify-content: center;
     align-items: baseline;
@@ -29,6 +33,10 @@ h1{
     border-radius: 3%;
     flex-grow: 1;
     color: aquamarine;
+}
+
+.flex-container-nav a{
+    text-decoration: none;
 }
 
 .flex-item{
@@ -44,20 +52,21 @@ h1{
     display: flex;
     justify-content: center;
     width: 80%;
-    font-size: 18px;
+    font-size: 0.75rem;
     font-family: 'Roboto Mono', monospace;
 }
 
 .flex-container-image{
-    width: 1400px;
-    height: 400px;
+    padding: 3%;
+    width: 90vw;
+    height: 40vw;
     display: flex;
     justify-content: center;
 }
 
 .flex-container-projeler{
+    margin: 0 auto;
     padding: 3%;
-    height: 600px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -91,36 +100,22 @@ h1{
 }
 
 .flex-container-projeler-text{
-    
-    width: 200px;
     padding: 10%;
-
-    display: flex;
-    font-size: 20px;
-    flex-direction: row;
-    justify-content: center;
-    align-items: baseline;
-    align-content: center;
-    padding: 3%;
-    border-radius: 3%;
-    flex-grow: 1;
-    color: aquamarine;
-
 }
 
 h2{
     margin: 2% auto;
     display:flex;
-    font-size: 15px;
+    font-size: 0.75rem;
     color: aquamarine;
     justify-content: center;
-    height: 20px;
+    height: 1rem;
     border: 1px solid aquamarine;
 }
 
 .flex-container-nav2{
     display: flex;
-    font-size: 20px;
+    font-size: 1rem;
     flex-direction: row;
     justify-content: center;
     align-items: baseline;
@@ -129,4 +124,66 @@ h2{
     border-radius: 3%;
     flex-grow: 1;
     color: aquamarine;
+}
+.flex-container-nav2 a{
+    text-decoration: none;
+}
+
+@media(max-width:600px){
+    .flex-container{
+        width: 70vw;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .flex-container-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .flex-container-nav a{
+        font-size: 0.75rem;
+        text-align: center;
+    }
+
+    .flex-container-image{
+        width: 95vw;
+    }
+
+    .flex-container-projeler{
+        margin: 0 auto;
+        padding: 3%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: space-around;
+    }
+
+    .flex-container-projeler *{
+        width: 40vw;
+        padding: 2%;
+    }
+
+    .flex-container-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-container-nav2 {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .flex-container-nav2 a{
+        font-size: 0.75rem;
+    }
+
 }
